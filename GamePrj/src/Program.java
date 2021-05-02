@@ -1,4 +1,5 @@
 import java.awt.Frame;
+import java.awt.event.WindowListener;
 
 public class Program {
 
@@ -6,7 +7,7 @@ public class Program {
 		// has a 상속
 //		Frame frame = new Frame();
 		GameFrame frame = new GameFrame();
-		frame.setVisible(true);
+
 		// 기록
 	}
 
