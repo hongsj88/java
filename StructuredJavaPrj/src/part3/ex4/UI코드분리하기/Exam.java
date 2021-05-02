@@ -1,4 +1,4 @@
-package part3.ex4.UIÄÚµåºÐ¸®ÇÏ±â;
+package part3.ex4.UIì½”ë“œë¶„ë¦¬í•˜ê¸°;
 
 
 public class Exam {

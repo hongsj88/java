@@ -1,17 +1,17 @@
-package part3.ex4.UIÄÚµåºĞ¸®ÇÏ±â;
+package part3.ex4.UIì½”ë“œë¶„ë¦¬í•˜ê¸°;
 
 public class ExamList {
 	private Exam[] exams;
-	private int current; // ¿ÜºÎ¿¡¼­ ÇØ´ç º¯¼ö¸¦ ¼öÁ¤ÇÏÁö ¸øÇÏ°Ô ÇÑ´Ù.
-						// Ä¸½¶È­¸¦ ±úµå¸®´Â ÇàÀ§¸¦ ¾Æ¿¹ ¸·°Ô µÇ´Â °ÍÀÌ´Ù!!
+	private int current; // ì™¸ë¶€ì—ì„œ í•´ë‹¹ ë³€ìˆ˜ë¥¼ ìˆ˜ì •í•˜ì§€ ëª»í•˜ê²Œ í•œë‹¤.
+						// ìº¡ìŠí™”ë¥¼ ê¹¨ë“œë¦¬ëŠ” í–‰ìœ„ë¥¼ ì•„ì˜ˆ ë§‰ê²Œ ë˜ëŠ” ê²ƒì´ë‹¤!!
 	
 	public ExamList() {
 		this(3);		
 	}
 	
-	// »ı¼ºÀÚ overload
-	// ÁÖÀÇ»çÇ×
-	// ±âº»»ı¼ºÀÚ°¡ ¾ø´Â °æ¿ì¿¡´Â »ı¼ººÒ°¡
+	// ìƒì„±ì overload
+	// ì£¼ì˜ì‚¬í•­
+	// ê¸°ë³¸ìƒì„±ìê°€ ì—†ëŠ” ê²½ìš°ì—ëŠ” ìƒì„±ë¶ˆê°€
 	//  
 	public ExamList(int size) {
 		exams = new Exam[size];
@@ -26,14 +26,14 @@ public class ExamList {
 		Exam[] exams = this.exams;
 		int size = current;
 		if (exams.length == size) {
-			// 1. Å©±â°¡ 5°³ ´õ Å« »õ·Î¿î ¹è¿­À» »ı¼º
+			// 1. í¬ê¸°ê°€ 5ê°œ ë” í° ìƒˆë¡œìš´ ë°°ì—´ì„ ìƒì„±
 			Exam[] temp = new Exam[size + 5];
 			
-			// 2. °ªÀ» ÀÌÁÖ½ÃÅ°±â
+			// 2. ê°’ì„ ì´ì£¼ì‹œí‚¤ê¸°
 			for(int i=0;i<size;i++) {
 				temp[i] = exams[i];
 			}
-			// 3. list.exams °¡ »õ·Î¸¸µç temp ¹è¿­À» ÂüÁ¶ÇÏµµ·Ï ÇÑ´Ù.
+			// 3. list.exams ê°€ ìƒˆë¡œë§Œë“  temp ë°°ì—´ì„ ì°¸ì¡°í•˜ë„ë¡ í•œë‹¤.
 			exams = temp;
 		}
 		

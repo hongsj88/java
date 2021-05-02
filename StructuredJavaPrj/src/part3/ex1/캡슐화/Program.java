@@ -1,4 +1,4 @@
-package part3.ex1.Ä¸½¶È­;
+package part3.ex1.ìº¡ìŠí™”;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class Program {
 	final int MENU_PRINT = 2;
 		final int MENU_EXIT = 3;
 		
-		Á¾·á:
+		ì¢…ë£Œ:
 		while(keepLoop) {
 
 			menu = inputMenu();
@@ -30,9 +30,9 @@ public class Program {
 				break;
 			case MENU_EXIT:
 				System.out.println("Bye~~~~~");
-				break Á¾·á;
+				break ì¢…ë£Œ;
 			default: 
-				System.out.println("ÀÔ·Â¿À·ù!! 1~3¹ø±îÁö¸¸ ¼±ÅÃÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.");
+				System.out.println("ìž…ë ¥ì˜¤ë¥˜!! 1~3ë²ˆê¹Œì§€ë§Œ ì„ íƒí•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.");
 			}
 		
 		}
@@ -40,15 +40,15 @@ public class Program {
 	}
 	
 	static int  inputMenu() {
-		//----- ¸ÞÀÎ¸Þ´º ºÎºÐ ---------------------------
+		//----- ë©”ì¸ë©”ë‰´ ë¶€ë¶„ ---------------------------
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤\n");
-		System.out.print("¦¢      ¸ÞÀÎ¸Þ´º            ¦¢\n");	
-		System.out.print("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥\n");
-		System.out.print("\t1. ¼ºÀûÀÔ·Â");
-		System.out.print("\t2. ¼ºÀûÃâ·Â");
-		System.out.print("\t3. Á¾·á");
+		System.out.print("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”\n");
+		System.out.print("â”‚      ë©”ì¸ë©”ë‰´            â”‚\n");	
+		System.out.print("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜\n");
+		System.out.print("\t1. ì„±ì ìž…ë ¥");
+		System.out.print("\t2. ì„±ì ì¶œë ¥");
+		System.out.print("\t3. ì¢…ë£Œ");
 		System.out.print("\t>");
 		return scan.nextInt();
 	}

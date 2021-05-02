@@ -1,4 +1,4 @@
-package part3.ex3.Getters¿ÍSetters;
+package part3.ex3.Gettersì™€Setters;
 
 
 public class Exam {

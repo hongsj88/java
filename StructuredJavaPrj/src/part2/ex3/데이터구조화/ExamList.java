@@ -1,4 +1,4 @@
-package part2.ex3.µ¥ÀÌÅÍ±¸Á¶È­;
+package part2.ex3.ë°ì´í„°êµ¬ì¡°í™”;
 
 public class ExamList {
 	Exam[] exams;

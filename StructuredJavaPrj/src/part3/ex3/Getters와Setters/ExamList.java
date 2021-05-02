@@ -1,19 +1,19 @@
-package part3.ex3.Getters¿ÍSetters;
+package part3.ex3.Gettersì™€Setters;
 
 import java.util.Scanner;
 
 public class ExamList {
 	private Exam[] exams;
-	private int current; // ¿ÜºÎ¿¡¼­ ÇØ´ç º¯¼ö¸¦ ¼öÁ¤ÇÏÁö ¸øÇÏ°Ô ÇÑ´Ù.
-						// Ä¸½¶È­¸¦ ±úµå¸®´Â ÇàÀ§¸¦ ¾Æ¿¹ ¸·°Ô µÇ´Â °ÍÀÌ´Ù!!
+	private int current; // ì™¸ë¶€ì—ì„œ í•´ë‹¹ ë³€ìˆ˜ë¥¼ ìˆ˜ì •í•˜ì§€ ëª»í•˜ê²Œ í•œë‹¤.
+						// ìº¡ìŠí™”ë¥¼ ê¹¨ë“œë¦¬ëŠ” í–‰ìœ„ë¥¼ ì•„ì˜ˆ ë§‰ê²Œ ë˜ëŠ” ê²ƒì´ë‹¤!!
 	
 	public ExamList() {
 		this(3);		
 	}
 	
-	// »ı¼ºÀÚ overload
-	// ÁÖÀÇ»çÇ×
-	// ±âº»»ı¼ºÀÚ°¡ ¾ø´Â °æ¿ì¿¡´Â »ı¼ººÒ°¡
+	// ìƒì„±ì overload
+	// ì£¼ì˜ì‚¬í•­
+	// ê¸°ë³¸ìƒì„±ìê°€ ì—†ëŠ” ê²½ìš°ì—ëŠ” ìƒì„±ë¶ˆê°€
 	//  
 	public ExamList(int size) {
 		exams = new Exam[size];
@@ -26,10 +26,10 @@ public class ExamList {
 	}
 	public void printList(int size) {
 		int total;
-		System.out.print("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤\n");
-		System.out.print("¦¢      ¼ºÀûÃâ·Â            ¦¢\n");	
-		System.out.print("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥\n");
-		System.out.println("¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡");
+		System.out.print("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”\n");
+		System.out.print("â”‚      ì„±ì ì¶œë ¥            â”‚\n");	
+		System.out.print("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜\n");
+		System.out.println("â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€");
 		Exam[] exams = this.exams;
 		for(int i = 0;i<size;i++) {
 			Exam exam = exams[i];
@@ -38,14 +38,14 @@ public class ExamList {
 			int math = exam.getMath();
 			total = exam.total();//kor + eng + math;
 			float avg = exam.getAvg();
-			System.out.printf("±¹¾î%d\n",kor);
-			System.out.printf("¿µ¾î%d\n",eng);
-			System.out.printf("¼öÇĞ%d\n",math);
+			System.out.printf("êµ­ì–´%d\n",kor);
+			System.out.printf("ì˜ì–´%d\n",eng);
+			System.out.printf("ìˆ˜í•™%d\n",math);
 			
-			System.out.printf("ÃÑÁ¡ : %3d \n",total);
-			System.out.printf("Æò±Õ : %6.2f \n",avg
+			System.out.printf("ì´ì  : %3d \n",total);
+			System.out.printf("í‰ê·  : %6.2f \n",avg
 					);
-			System.out.println("¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡");
+			System.out.println("â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€");
 		}
 		
 	}
@@ -53,35 +53,35 @@ public class ExamList {
 	public void inputList() {
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤\n");
-		System.out.print("¦¢      ¼ºÀûÀÔ·Â            ¦¢\n");	
-		System.out.print("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥\n");
+		System.out.print("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”\n");
+		System.out.print("â”‚      ì„±ì ì…ë ¥            â”‚\n");	
+		System.out.print("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜\n");
 		
 		int kor=0;
 		int eng=0;
 		int math =0;
 		
 		do{
-			System.out.printf("±¹¾î :");
+			System.out.printf("êµ­ì–´ :");
 			kor = scan.nextInt();
 			if ((kor < 0 || 100 < kor) )
-				System.out.println("¼ºÀû¹üÀ§(0~100)¸¦ ¹ş¾î³µ½À´Ï´Ù.");
+				System.out.println("ì„±ì ë²”ìœ„(0~100)ë¥¼ ë²—ì–´ë‚¬ìŠµë‹ˆë‹¤.");
 			
 		}while(kor < 0 || 100 < kor) ;
 		
 		do{
-			System.out.printf("¿µ¾î :");
+			System.out.printf("ì˜ì–´ :");
 			eng = scan.nextInt();
 			if ((eng < 0 || 100 < eng) )
-				System.out.println("¼ºÀû¹üÀ§(0~100)¸¦ ¹ş¾î³µ½À´Ï´Ù.");
+				System.out.println("ì„±ì ë²”ìœ„(0~100)ë¥¼ ë²—ì–´ë‚¬ìŠµë‹ˆë‹¤.");
 			
 		}while(eng < 0 || 100 < eng) ;
 		
 		do{
-			System.out.printf("¼öÇĞ :");
+			System.out.printf("ìˆ˜í•™ :");
 			math = scan.nextInt();
 			if ((math < 0 || 100 < math) )
-				System.out.println("¼ºÀû¹üÀ§(0~100)¸¦ ¹ş¾î³µ½À´Ï´Ù.");
+				System.out.println("ì„±ì ë²”ìœ„(0~100)ë¥¼ ë²—ì–´ë‚¬ìŠµë‹ˆë‹¤.");
 			
 		}while(math < 0 || 100 < math) ;
 		
@@ -89,14 +89,14 @@ public class ExamList {
 		Exam[] exams = this.exams;
 		int size = current;
 		if (exams.length == size) {
-			// 1. Å©±â°¡ 5°³ ´õ Å« »õ·Î¿î ¹è¿­À» »ı¼º
+			// 1. í¬ê¸°ê°€ 5ê°œ ë” í° ìƒˆë¡œìš´ ë°°ì—´ì„ ìƒì„±
 			Exam[] temp = new Exam[size + 5];
 			
-			// 2. °ªÀ» ÀÌÁÖ½ÃÅ°±â
+			// 2. ê°’ì„ ì´ì£¼ì‹œí‚¤ê¸°
 			for(int i=0;i<size;i++) {
 				temp[i] = exams[i];
 			}
-			// 3. list.exams °¡ »õ·Î¸¸µç temp ¹è¿­À» ÂüÁ¶ÇÏµµ·Ï ÇÑ´Ù.
+			// 3. list.exams ê°€ ìƒˆë¡œë§Œë“  temp ë°°ì—´ì„ ì°¸ì¡°í•˜ë„ë¡ í•œë‹¤.
 			exams = temp;
 		}
 		

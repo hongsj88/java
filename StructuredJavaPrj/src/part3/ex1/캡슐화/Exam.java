@@ -1,4 +1,4 @@
-package part3.ex1.ĸ��ȭ;
+package part3.ex1.캡슐화;
 
 public class Exam {
 

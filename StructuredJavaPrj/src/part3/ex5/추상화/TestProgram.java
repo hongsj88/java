@@ -1,4 +1,4 @@
-package part3.ex5.�߻�ȭ;
+package part3.ex5.추상화;
 
 public class TestProgram {
 

@@ -1,4 +1,4 @@
-package part2.ex2.ž�ٿ��;
+package part2.ex2.탑다운예제;
 
 import java.util.Scanner;
 

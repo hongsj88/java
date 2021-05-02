@@ -1,4 +1,4 @@
-package part3.ex5.Ãß»óÈ­;
+package part3.ex5.ì¶”ìƒí™”;
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ public class NewlecExamConsole extends ExamConsole {
 	protected void onPrint(Exam exam) {
 		NewlecExam newlecExam = (NewlecExam)exam;
 		int com = newlecExam.getCom();
-		System.out.printf("ÄÄÇ»ÅÍ%d\n",com);		
+		System.out.printf("ì»´í“¨í„°%d\n",com);		
 	}
 
 	@Override
@@ -22,10 +22,10 @@ public class NewlecExamConsole extends ExamConsole {
 		Scanner scan = new Scanner(System.in);
 		int com;
 		do{
-			System.out.printf("ÄÄÇ»ÅÍ :");
+			System.out.printf("ì»´í“¨í„° :");
 			com = scan.nextInt();
 			if ((com < 0 || 100 < com) )
-				System.out.println("¼ºÀû¹üÀ§(0~100)¸¦ ¹ş¾î³µ½À´Ï´Ù.");
+				System.out.println("ì„±ì ë²”ìœ„(0~100)ë¥¼ ë²—ì–´ë‚¬ìŠµë‹ˆë‹¤.");
 			
 		}while(com < 0 || 100 < com) ;
 		NewlecExam newlecExam = (NewlecExam)exam;

@@ -1,4 +1,4 @@
-package part3.ex2.�޼ҵ�;
+package part3.ex2.메소드;
 
 public class Exam {
 

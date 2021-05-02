@@ -1,9 +1,9 @@
-import part3.ex4.UIÄÚµåºÐ¸®ÇÏ±â.Exam;
+import part3.ex4.UIì½”ë“œë¶„ë¦¬í•˜ê¸°.Exam;
 
 public class Program {
 	
-//	1.ÄÄÆÄÀÏ -> Exam.class
-//	2.¾ÐÃà -> Exam.zip
+//	1.ì»´íŒŒì¼ -> Exam.class
+//	2.ì••ì¶• -> Exam.zip
 //	3.jar -> Exam.jar
 	public static void main(String[] args) {
 		NewLecExam exam = new NewLecExam();

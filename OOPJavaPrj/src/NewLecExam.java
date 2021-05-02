@@ -1,4 +1,4 @@
-import part3.ex4.UIÄÚµåºÐ¸®ÇÏ±â.Exam;
+import part3.ex4.UIì½”ë“œë¶„ë¦¬í•˜ê¸°.Exam;
 
 public class NewLecExam extends Exam{
 	private int com;
