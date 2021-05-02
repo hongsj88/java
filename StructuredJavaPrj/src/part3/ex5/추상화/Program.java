@@ -7,7 +7,8 @@ public class Program {
 	public static void main(String[] args) {
 		// 의존객체로서 main에게는 필요하지만 클래스의 멤버가 아니므로 
 		// Program과 ExamConsole은 dependancy 
-		ExamConsole console = new ExamConsole();		
+		Exam exam = new ExamConsole();
+		ExamConsole console = 
 		int menu;
 		boolean keepLoop = true;
 		final int MENU_INPUT = 1;

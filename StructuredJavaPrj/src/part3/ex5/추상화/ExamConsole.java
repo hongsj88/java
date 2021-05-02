@@ -11,11 +11,11 @@ public abstract class ExamConsole {
 	}
 	//private ExamList list = new ExamList();
 	
-	void printList() {
-		printList(list.size());
+	void print() {
+		print(list.size());
 		
 	}
-	public void printList(int size) {
+	public void print(int size) {
 		int total;
 		System.out.print("┌────────────────────────┐\n");
 		System.out.print("│      성적출력            │\n");	
@@ -32,6 +32,7 @@ public abstract class ExamConsole {
 			System.out.printf("국어%d\n",kor);
 			System.out.printf("영어%d\n",eng);
 			System.out.printf("수학%d\n",math);
+			// 자식이 구현할 부분
 			onPrint(exam);
 			System.out.printf("총점 : %3d \n",total);
 			System.out.printf("평균 : %6.2f \n",avg);
@@ -40,7 +41,7 @@ public abstract class ExamConsole {
 		
 	}
 	
-	public void inputList() {
+	public void input() {
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.print("┌────────────────────────┐\n");
@@ -81,7 +82,7 @@ public abstract class ExamConsole {
 		exam.setKor(kor);
 		exam.setEng(eng);
 		exam.setMath(math);
-		
+		// 자식이 구현할 부분
 		onInput(exam);
 		/* 데이터를 추가하는 로직 */
 		list.add(exam);

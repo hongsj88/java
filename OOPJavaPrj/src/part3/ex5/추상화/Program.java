@@ -4,8 +4,8 @@ public class Program {
 
 	public static void main(String[] args) {
 		ExamConsole console = new NewlecExamConsole();
-		console.inputList();
-		console.printList();
+		console.input();
+		console.print();
 
 	}
 
