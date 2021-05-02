@@ -13,7 +13,7 @@ public class NewlecExamConsole extends ExamConsole {
 	@Override
 	protected void onPrint(Exam exam) {
 		NewlecExam newlecExam = (NewlecExam)exam;
-		int com = newlecExam.getCom();
+		int com = ((NewlecExam)exam).getCom();
 		System.out.printf("컴퓨터%d\n",com);		
 	}
 
